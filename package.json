@@ -1,0 +1,27 @@
+{
+  "name": "teste_siteweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wevdiaz/Teste_SiteWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wevdiaz/Teste_SiteWeb/issues"
+  },
+  "homepage": "https://github.com/wevdiaz/Teste_SiteWeb#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
