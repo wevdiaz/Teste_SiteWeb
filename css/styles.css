@@ -1,0 +1,58 @@
+:root {
+  --font-base: 'Roboto', sans-serif;
+
+  font-size: 62.50%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: var(--font-base);
+  text-decoration: none;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+}
+
+.banner .box {
+  position: relative;
+  background-color: #131f37;
+  height: 100vh;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 6rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  max-width: 20rem;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+}
+
+header ul li a {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+  transition: color .3s;
+}
+
+header ul li a:hover {
+  color: rgba(255, 255, 255, 1);
+}
