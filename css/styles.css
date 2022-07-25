@@ -43,7 +43,7 @@ header .logo img {
 header ul {
   list-style: none;
   display: flex;
-  gap: 6rem;
+  gap: 4rem;
 }
 
 header ul li a {
@@ -55,4 +55,117 @@ header ul li a {
 
 header ul li a:hover {
   color: rgba(255, 255, 255, 1);
+}
+
+.banner .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .content .contentBox {
+  text-align: center;
+}
+
+.banner .content .contentBox img {
+  width: 100%;
+}
+
+.banner .content .contentBox p {
+  font-size: 1.9rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+.banner .content .contentBox .btn {
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #333;
+  background-color: #fff;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  border-radius: 3rem;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.banner .content .contentBox .btn:hover {
+  letter-spacing: 2px;
+}
+
+.sci {
+  position: absolute;
+  bottom: 3rem;
+  right: 6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sci h3 {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li img {
+  max-width: 3rem;
+}
+
+
+.banner .images {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner .images .imgBx{
+  position: relative;
+  width: 50%;
+  height: 50vh;
+}
+
+.banner .images .imgBx:nth-child(3) {
+  width: 100%;
+}
+
+.banner .images .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  .banner {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    padding: 2rem 4rem;
+  }
+
+  .banner .content {
+    padding: 4rem;
+    height: 70vh;
+  }
+
+  .sci {
+    right: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner .images .imgBx {
+    width: 100%;
+  }
 }
