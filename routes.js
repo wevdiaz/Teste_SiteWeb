@@ -2,7 +2,7 @@ const express = require("express");
 const route = express.Router();
 
 route.get("/", (req, res) => {
-  return res.send("página no servidor diaz");
+  return res.render("index.html");
 });
 
 module.exports = route;

@@ -1,7 +1,15 @@
 const express = require("express");
-const app = express();
 const routes = require("./routes");
+const nunjucks = require("nunjucks");
+const app = express();
 
+app.use(express.static("public"));
+
+nunjucks.configure("views", {
+  express: app,
+  autoescape: true,
+  noCache: true
+});
 
 app.use(routes);
 
