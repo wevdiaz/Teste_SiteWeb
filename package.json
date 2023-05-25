@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/wevdiaz/Teste_SiteWeb#readme",
   "dependencies": {
+    "@vercel/node": "^2.14.3",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "nunjucks": "^3.2.3"
