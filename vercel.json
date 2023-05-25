@@ -1,15 +1,13 @@
 {
-  "name": "teste_siteweb",
   "version": 2,
-  "public": true,
   "build": {
-    "src": "./app.js",
+    "src": "app.js",
     "use": "@vercel/node"
   },
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "./app.js"
+      "src": "(.*)",
+      "dest": "app.js"
     }
   ]
 }
